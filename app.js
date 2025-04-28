@@ -38,6 +38,18 @@ var swiper = new Swiper(".mySwiper", {
   });
 
 
+  function addToCart(imageUrl, productName) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.push({
+        image: imageUrl,
+        name: productName,
+        quantity: 1
+    });
+    localStorage.setItem('cart', JSON.stringify(cart));
+    window.location.href = 'cart.html';
+}
+
+
 
 
 
