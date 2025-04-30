@@ -33,7 +33,7 @@
                 <p class="card_price">₹1500</p>
                 <!-- 🔥 New Button Section -->
         <div class="card_buttons">
-            <button class="btn_cart">Add to Cart</button>
+            <button class="btn_cart" onclick="addToCart('./IMAGES/watch.jpg', 'Stylish Watch')">Add to Cart</button>
             <button class="btn_view">View Details</button>
         </div>
             </div>
@@ -52,7 +52,7 @@
                 <p class="card_price">₹2500</p>
                 <!-- 🔥 New Button Section -->
         <div class="card_buttons">
-            <button class="btn_cart">Add to Cart</button>
+            <button class="btn_cart" onclick="addToCart('./IMAGES/watch2.jpg', 'Luxury Watch')">Add to Cart</button>
             <button class="btn_view">View Details</button>
         </div>
             </div>
@@ -72,7 +72,7 @@
                 <p class="card_price">₹1200</p>
                 <!-- 🔥 New Button Section -->
         <div class="card_buttons">
-            <button class="btn_cart">Add to Cart</button>
+            <button class="btn_cart" onclick="addToCart('./IMAGES/watch3.jpg', 'Classic Watch')">Add to Cart</button>
             <button class="btn_view">View Details</button>
         </div>
             </div>
@@ -93,7 +93,7 @@
                 <p class="card_price">₹1200</p>
                 <!-- 🔥 New Button Section -->
         <div class="card_buttons">
-            <button class="btn_cart">Add to Cart</button>
+            <button class="btn_cart" onclick="addToCart('./IMAGES/watch4.jpg', 'Classic Watch')">Add to Cart</button>
             <button class="btn_view">View Details</button>
         </div>
             </div>
@@ -114,7 +114,7 @@
                 <p class="card_price">₹1200</p>
                 <!-- 🔥 New Button Section -->
         <div class="card_buttons">
-            <button class="btn_cart">Add to Cart</button>
+            <button class="btn_cart" onclick="addToCart('./IMAGES/watch6.jpg', 'Classic Watch')">Add to Cart</button>
             <button class="btn_view">View Details</button>
         </div>
             </div>
@@ -135,7 +135,7 @@
                 <p class="card_price">₹1200</p>
                 <!-- 🔥 New Button Section -->
         <div class="card_buttons">
-            <button class="btn_cart">Add to Cart</button>
+            <button class="btn_cart" onclick="addToCart('./IMAGES/watch5.jpg', 'Classic Watch')">Add to Cart</button>
             <button class="btn_view">View Details</button>
         </div>
             </div>
@@ -156,7 +156,7 @@
                 <p class="card_price">₹1200</p>
                 <!-- 🔥 New Button Section -->
         <div class="card_buttons">
-            <button class="btn_cart">Add to Cart</button>
+            <button class="btn_cart" onclick="addToCart('./IMAGES/watch7.jpg', 'Classic Watch')">Add to Cart</button>
             <button class="btn_view">View Details</button>
         </div>
             </div>
@@ -177,7 +177,7 @@
                 <p class="card_price">₹1200</p>
                 <!-- 🔥 New Button Section -->
         <div class="card_buttons">
-            <button class="btn_cart">Add to Cart</button>
+            <button class="btn_cart" onclick="addToCart('./IMAGES/watch8.jpg', 'Classic Watch')">Add to Cart</button>
             <button class="btn_view">View Details</button>
         </div>
             </div>
@@ -198,7 +198,7 @@
                 <p class="card_price">₹1200</p>
                 <!-- 🔥 New Button Section -->
         <div class="card_buttons">
-            <button class="btn_cart">Add to Cart</button>
+            <button class="btn_cart" onclick="addToCart('./IMAGES/watch3.jpg', 'Classic Watch')">Add to Cart</button>
             <button class="btn_view">View Details</button>
         </div>
             </div>
@@ -219,7 +219,7 @@
                 <p class="card_price">₹1200</p>
                 <!-- 🔥 New Button Section -->
         <div class="card_buttons">
-            <button class="btn_cart">Add to Cart</button>
+            <button class="btn_cart" onclick="addToCart('./IMAGES/watch7.jpg', 'Classic Watch')">Add to Cart</button>
             <button class="btn_view">View Details</button>
         </div>
             </div>
@@ -239,7 +239,7 @@
                 <h3 class="card_title">Classic Watch</h3>
                 <p class="card_price">₹1200</p>
                 <div class="card_buttons">
-                    <button class="btn_cart">Add to Cart</button>
+                    <button class="btn_cart" onclick="addToCart('./IMAGES/watch.jpg', 'Classic Watch')">Add to Cart</button>
                     <button class="btn_view">View Details</button>
                 </div>
             </div>
@@ -260,7 +260,7 @@
                 <p class="card_price">₹1200</p>
                 <!-- 🔥 New Button Section -->
         <div class="card_buttons">
-            <button class="btn_cart">Add to Cart</button>
+            <button class="btn_cart" onclick="addToCart('./IMAGES/watch7.jpg', 'Classic Watch')">Add to Cart</button>
             <button class="btn_view">View Details</button>
         </div>
             </div>
@@ -270,4 +270,17 @@
     </div>
     
 </body>
+
+<script>
+    function addToCart(imageUrl, productName) {
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        cart.push({
+            image: imageUrl,
+            name: productName,
+            quantity: 1
+        });
+        localStorage.setItem('cart', JSON.stringify(cart));
+        window.location.href = 'cart.html';
+    }
+    </script>
 </html>
