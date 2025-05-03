@@ -45,7 +45,7 @@ function toggleForm(formType) {
   
     if (matchedUser) {
         alert("Login successful! Welcome, " + matchedUser.name);
-        window.location.href = "index.html"; // ← redirect to index.html
+        window.location.href = "mainpage.html"; // ← redirect to index.html
       } else {
         alert("Invalid email or password.");
       }
