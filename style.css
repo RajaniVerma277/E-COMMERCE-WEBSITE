@@ -385,4 +385,252 @@ ul{
 
 
 
+/* Tablet view (max-width: 991px) */
+@media (max-width: 768px) {
+    .top_nav {
+        height: 4rem; /* thodi chhoti height */
+    }
+    .top_nav_p,
+    .top_nav_link {
+        font-size: 1.2rem; /* chhota font size for tablet */
+    }
+
+
+
+.nav {
+    height: auto;
+    padding: 1rem 0;
+}
+
+.nav_container {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.nav_logo {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.nav_list {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.nav_item {
+    margin: 0.3rem 0;
+}
+
+.nav_link {
+    font-size: 1.2rem;
+    padding: 0.4rem;
+}
+
+.nav_items {
+    flex-direction: row;  /* ✅ One line */
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0;
+}
+
+.nav_form {
+    flex: 1;
+    min-width: 200px;
+    margin: 0;
+    height: 40px;
+}
+
+.nav_heart,
+.nav_cart {
+    width: 30px;
+    height: 30px;
+}
+
+.header_container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.header_filter {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.header_filter_link {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+}
+
+.header_img {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+
+.swiper-slide {
+    width: 50% !important;
+    flex: 0 0 50%;
+  }
+
+  .card_top {
+    height: 20rem;
+  }
+
+  .section_title {
+    font-size: 2.3rem;
+  }
+
+  .card_title {
+    font-size: 1.5rem;
+  }
+
+  .card_price {
+    font-size: 1.3rem;
+  }
+
+  .footer_container{
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    grid-gap:4rem;
+    padding:5rem 0rem;
+    color:var(--color-white-1)
+
+}
+}
+
+
+
+
+
+/* Small devices (max-width: 575px) */
+@media (max-width: 400px) {
+    .top_nav {
+        height: 4rem; /* aur chhoti height */
+    }
+    .top_nav_p,
+    .top_nav_link {
+        font-size: 1rem; /* aur chhota font */
+    }
+
+    .top_nav_wrapper {
+        flex-direction: column; /* taaki items stack ho jaaye vertically */
+        text-align: center;
+        gap: 0.2rem;
+    }
+
+    .top_nav_link {
+        margin-left: 0; /* remove left margin */
+    }
+
+  
+.nav_logo {
+    font-size: 1.6rem;
+}
+
+.nav_link {
+    font-size: 1rem;
+}
+
+.nav_input {
+    width: 100%;
+    font-size: 1rem;
+}
+
+.nav_search {
+    width: 20px;
+    height: 20px;
+}
+
+.nav_items {
+    flex-direction: row; /* ✅ Stay in one line */
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.nav_form {
+    flex: 1;
+    min-width: 160px;
+}
+
+.nav_heart,
+.nav_cart {
+    width: 24px;
+    height: 24px;
+}
+
+.header_container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Helps stack items on smaller screens */
+    margin-top: 4rem;
+}
+
+.header_filter {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.header_filter_link {
+    color: var(--color-dark-1);
+    text-decoration: none;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.header_img {
+    width: 75%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+    .header_filter {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header_filter_link {
+        font-size: 0.85rem;
+        padding: 0.3rem;
+    }
+
+    .header_img {
+        width: 100%;
+        height: auto;
+    }
+
+    .swiper-slide {
+        width: 100% !important;
+        flex: 0 0 100%;
+      }
+    
+      .card_top {
+        height: 18rem;
+      }
+    
+      .section_title {
+        font-size: 2rem;
+      }
+    
+      .card_title {
+        font-size: 1.4rem;
+      }
+    
+      .card_price {
+        font-size: 1.2rem;
+      }
+}
+
 
